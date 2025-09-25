@@ -1,0 +1,123 @@
+ :root {
+  --verde-fondo: #92a48e;
+  --verde-oscuro: #2d3b2c;
+  --dorado: #b18b44;
+  --gris: #444;
+  --blanco: #fff;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--verde-fondo);
+  color: var(--verde-oscuro);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* NAVBAR */
+nav {
+  background-color: var(--verde-oscuro);
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--blanco);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--dorado);
+}
+
+/* HEADER */
+header {
+  background-color: rgba(125,160,136,255);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header img {
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+h1 {
+  color: var(--dorado);
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+/* CATALOGO */
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  flex-grow: 1;
+}
+
+.item {
+  background-color: var(--verde-oscuro);
+  color: var(--blanco);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+}
+
+.item img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.item h2 {
+  color: var(--dorado);
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.item p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin: 0.3rem 0;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--verde-oscuro);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #b18b44;
+}

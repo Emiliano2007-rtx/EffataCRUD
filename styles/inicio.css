@@ -1,0 +1,102 @@
+:root {
+  --verde-fondo: rgba(125,160,136,255);
+  --verde-oscuro: #2d3b2c;
+  --dorado: #b18b44;
+  --gris: #444;
+  --blanco: #fff;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--verde-fondo);
+  color: var(--verde-oscuro);
+  text-align: center;
+}
+
+/* Navbar */
+nav {
+  background-color: var(--verde-oscuro);
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--blanco);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--dorado);
+}
+
+/* Página de inicio */
+.inicio {
+  padding: 3rem 1rem;
+  flex-grow: 1; /* Empuja el footer hacia abajo */
+}
+
+.logo {
+  max-width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--dorado);
+}
+
+.frase {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.descripcion {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.boton {
+  background-color: var(--dorado);
+  color: var(--blanco);
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.boton:hover {
+  background-color: #98753a;
+}
+
+
+
+footer {
+  background-color: var(--verde-oscuro);
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: var(--gris);
+  color: #b18b44;
+}

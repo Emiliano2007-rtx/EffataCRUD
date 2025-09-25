@@ -1,0 +1,221 @@
+:root {
+  --verde-fondo: rgba(125,160,136,255);
+  --verde-oscuro: #2d3b2c;
+  --dorado: #b18b44;
+  --gris: #444;
+  --blanco: #fff;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--verde-fondo);
+  color: var(--verde-oscuro);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+nav {
+  background-color: var(--verde-oscuro);
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--dorado);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+
+/* CRUD Section */
+.crud {
+  flex-grow: 1;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.crud h1 {
+  color: var(--dorado);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+/* Formulario en columna */
+.crud-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  width: 100%;
+}
+
+.crud-form input,
+.crud-form textarea {
+  padding: 0.8rem;
+  border: 1px solid var(--verde-oscuro);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.crud-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.crud-form .boton {
+  background-color: var(--dorado);
+  color: var(--blanco);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
+
+.crud-form .boton:hover {
+  background-color: #98753a;
+}
+
+/* Tabla corregida */
+.crud-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  padding: 0 1rem;
+}
+
+.crud-table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: var(--blanco);
+  border-radius: 0.5rem;
+}
+
+.crud-table th,
+.crud-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+.crud-table th {
+  background-color: var(--verde-oscuro);
+  color: var(--blanco);
+}
+
+.crud-table td {
+  color: var(--gris);
+}
+
+.crud-table button {
+  padding: 0.4rem 0.8rem;
+  margin: 0 0.2rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--blanco);
+}
+
+.crud-table .edit {
+  background-color: #4CAF50;
+}
+
+.crud-table .delete {
+  background-color: #E74C3C;
+}
+
+/* Footer */
+footer {
+  background-color: var(--verde-oscuro);
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #b18b44;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .crud h1 {
+    font-size: 1.6rem;
+  }
+
+  .crud-form {
+    max-width: 90%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .crud-table th,
+  .crud-table td {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+
+  .crud-table button {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .crud h1 {
+    font-size: 1.3rem;
+  }
+
+  .crud-form input,
+  .crud-form textarea,
+  .crud-form .boton {
+    font-size: 0.95rem;
+    padding: 0.6rem;
+  }
+
+  .crud-table th,
+  .crud-table td {
+    font-size: 0.85rem;
+    padding: 0.6rem;
+  }
+
+  .crud-table button {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+  }
+  
+}

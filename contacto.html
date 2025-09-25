@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Effata</title>
+  <style>
+    :root {
+      --verde-fondo: rgba(125,160,136,255);
+      --verde-oscuro: #2d3b2c;
+      --dorado: #b18b44;
+      --gris: #444;
+      --blanco: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--verde-fondo);
+      color: var(--blanco);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    nav {
+      background-color: var(--verde-oscuro);
+      padding: 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--blanco);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--dorado);
+    }
+
+    .contacto {
+      padding: 3rem 1rem;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .contacto h2 {
+      font-size: 2rem;
+      color: var(--dorado);
+      margin-bottom: 1rem;
+    }
+
+    .descripcion-contacto {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .contacto-info {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+      font-size: 1rem;
+    }
+
+    .contacto-info a {
+      color: var(--blanco);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .contacto-info a:hover {
+      color: var(--dorado);
+    }
+
+    footer {
+      background-color: var(--verde-oscuro);
+      padding: 1rem;
+      font-size: 0.85rem;
+      color: #b18b44;
+      text-align: center;
+    }
+
+    @media (min-width: 600px) {
+      .contacto-info {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="main.php">Catálogo</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <section class="contacto">
+    <h2>Contáctanos</h2>
+    <p class="descripcion-contacto">
+      ¿Tienes dudas, pedidos especiales o quieres saber más de nuestros productos? Escríbenos:
+    </p>
+
+    <div class="contacto-info">
+      <div>
+        📞 <strong>WhatsApp:</strong>
+        <a href="https://wa.me/523921363625" target="_blank">+52 3921363625</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Effata. Todos los derechos reservados.</p>
+    <p><strong>Desarrollador y administrador web:</strong> Emiliano Alvarado Iñiguez</p>
+    <p>Sitio creado y mantenido por Emiliano Alvarado Iñiguez.</p>
+  </footer>
+
+</body>
+</html>
